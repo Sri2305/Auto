@@ -14,6 +14,7 @@ public class firstScript {
 		driver.get("http://automationpractice.com/index.php");
 		driver.manage().window().maximize();
 		String title = driver.getTitle();
+		System.out.println(title);
 		Assert.assertEquals(title, "My Store");
 		driver.close();
 	}
